@@ -1,21 +1,21 @@
 var translate = (function() {
 
   // Private variable to store the user inputs
-  var textInput;
+  var textToTranslate;
   var output;
-  var language;
+  var languageToUse;
 
   // Return the public interface that other code can interact with
   return {
-    stringToTranslate: function(translatorObject) {
+    stringToTranslate: function() {
         
-       	textInput = translatorObject.textkey
-        language  =	translatorObject.languagekey
-
+       	textToTranslate = toMain.textOutput;
+        languageToUse = toMain.langOutput;
+        console.log(textToTranslate,languageToUse);
     },
 
     getTranslation: function(language){
-    	return output
+    	return textToInput
     }
 
   };

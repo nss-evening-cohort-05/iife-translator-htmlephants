@@ -6,6 +6,12 @@ var translatorObjects = {
     languagekey: document.getElementById('language')
 };
 
+var toMain = {
+
+	textOutput:" ",
+	langOutput:" "
+};
+
 
 // Function to determine the language 
 
@@ -13,9 +19,8 @@ translatorObjects.languagekey.addEventListener("change", function(event){
 
 	var lang = event.target.value;
 
-	console.log(lang);
-
-	// stringToTranslate(lang);
+	toMain.langOutput = lang;
+	console.log("testing",toMain.langOutput);
 
 
 });
@@ -24,6 +29,7 @@ translatorObjects.textkey.addEventListener("change", function(event){
 
 	var text = event.target.value;
 
-	console.log(text);
+	toMain.textOutput = text;
+	console.log("testing",toMain.textOutput);
 
 });
