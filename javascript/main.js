@@ -7,14 +7,14 @@ var translate = (function() {
 
   // Return the public interface that other code can interact with
   return {
-    stringToTranslate: function() {
+    stringToTranslate: function(languageChoice, textInput) {
         
-       	textToTranslate = toMain.textOutput;
-        languageToUse = toMain.langOutput;
+       	textToTranslate;
+        languageToUse;
         console.log(textToTranslate,languageToUse);
     },
 
-    getTranslation: function(language){
+    getTranslation: function(){
     	return textToInput
     }
 

@@ -6,30 +6,41 @@ var translatorObjects = {
     languagekey: document.getElementById('language')
 };
 
-var toMain = {
+var button = document.getElementById('translate');
+	
+//gets language
+function setLanguage(){	
+	
+	var lang = document.getElementsByName("lang");
+	
+	for (var i = 0; i < lang.length; i++) {
+		
+		if (lang[i].checked){
+			laguageToUse = lang[i].value;
+			console.log("language is " + lang[i].value);
+		} 
+	}
 
-	textOutput:" ",
-	langOutput:" "
 };
 
-
-// Function to determine the language 
-
-translatorObjects.languagekey.addEventListener("change", function(event){
-
-	var lang = event.target.value;
-
-	toMain.langOutput = lang;
-	console.log("testing",toMain.langOutput);
+//gets text
+function setText(){
+	var text = translatorObjects.textkey.value;
 
 
-});
-
-translatorObjects.textkey.addEventListener("change", function(event){
-
-	var text = event.target.value;
-
+	// textToTranslate = text;
 	toMain.textOutput = text;
-	console.log("testing",toMain.textOutput);
+	console.log("text is ",text);
+};
+
+button.addEventListener("click", function(){
+
+	translate.stringToTranslatesetLanguage();
+
+	setText();
 
 });
+
+
+// var resultSpanish = translate.spanishTranslate(translatorObjects.textkey);
+// console.log(resultSpanish);
