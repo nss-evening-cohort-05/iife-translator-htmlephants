@@ -12,7 +12,7 @@ var translate = (function() {
        	textInput = translatorObject.textkey
         language  =	translatorObject.languagekey
 
-    }
+    },
 
     getTranslation: function(language){
     	return output

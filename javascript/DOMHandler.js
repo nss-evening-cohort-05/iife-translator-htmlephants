@@ -9,9 +9,21 @@ var translatorObjects = {
 
 // Function to determine the language 
 
-languagekey.addEventListener("change", function(event){
+translatorObjects.languagekey.addEventListener("change", function(event){
 
-	console.log(event.target.value);
+	var lang = event.target.value;
 
+	console.log(lang);
+
+	// stringToTranslate(lang);
+
+
+});
+
+translatorObjects.textkey.addEventListener("change", function(event){
+
+	var text = event.target.value;
+
+	console.log(text);
 
 });
