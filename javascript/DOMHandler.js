@@ -30,8 +30,7 @@ function setText(){
 
 button.addEventListener("click", function(){
 
-	translate.stringToTranslate(setLanguage(),setText());
-
+	Translate.stringToTranslate(setLanguage(),setText());
 
 });
 

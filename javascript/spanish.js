@@ -1,11 +1,11 @@
- var translate = (function(trans) {
+ var translate = (function(inputs) {
  
- var spanishTr ={"happy": "saeed" , "spring": "Rabia", "day": "yoom", };
+ var spanishTr ={"happy": "contento" , "spring": "Primavera", "day": "dia", };
  
- trans.spanishTranslate = function(x){
+ inputs.spanishTranslate = function(x){
    return spanishTr[x];
  }
  
- return trans;
+ return ;
  
 })(Translate || {});
