@@ -1,11 +1,18 @@
- var translate = (function(inputs) {
+ var translate = (function(oldTranslator) {
  
- var spanishTr ={"happy": "contento" , "spring": "Primavera", "day": "dia", };
+ var spanishTr ={"happy": "contento" , 
+ 				"spring": "Primavera", 
+ 				"day": "dia" 
+ 				};
  
- inputs.spanishTranslate = function(x){
-   return spanishTr[x];
+ oldTranslator.toSpanish = function(){
+   
+   // spanishTR.map().
+   
+   console.log(inputs);
+ 
  }
  
- return ;
+ return;
  
 })(Translate || {});
