@@ -8,4 +8,4 @@
  
  return trans;
  
-})(translate || {});
+})(Translate || {});

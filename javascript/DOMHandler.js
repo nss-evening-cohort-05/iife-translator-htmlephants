@@ -16,28 +16,22 @@ function setLanguage(){
 	for (var i = 0; i < lang.length; i++) {
 		
 		if (lang[i].checked){
-			laguageToUse = lang[i].value;
-			console.log("language is " + lang[i].value);
+			lang[i].value;
+			return lang[i].value;
 		} 
 	}
-
 };
 
 //gets text
 function setText(){
 	var text = translatorObjects.textkey.value;
-
-
-	// textToTranslate = text;
-	toMain.textOutput = text;
-	console.log("text is ",text);
+	return text
 };
 
 button.addEventListener("click", function(){
 
-	translate.stringToTranslatesetLanguage();
+	translate.stringToTranslate(setLanguage(),setText());
 
-	setText();
 
 });
 
