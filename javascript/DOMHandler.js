@@ -36,19 +36,19 @@ button.addEventListener("click", function(){
 
 		case "spanish":
 			console.log('Spanish chosen');
-			Translate.toSpanish(); 
+			Translate.toSpanish(Translate.getTranslation()); 
 			break;
 		case "arabic":
 			console.log('Arabic chosen');//run .arabicTranslate;
-			Translate.toArabic();
+			Translate.toArabic(Translate.getTranslation());
 			break;
 		case "french":
 			console.log('French chosen');//run .frenchTranslate;
-			Translate.toFrench();
+			Translate.toFrench(Translate.getTranslation());
 			break;
 		case "swahili":
 			console.log('Swahili chosen');//run .swahiliTranslate;
-			Translate.toSwahili();
+			Translate.toSwahili(Translate.getTranslation());
 			break;	
 		default:
 			alert("Choose one of the 4 languages");

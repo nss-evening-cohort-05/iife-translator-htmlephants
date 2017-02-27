@@ -5,11 +5,10 @@
  				"day": "dia" 
  				};
  
- oldTranslator.toSpanish = function(){
+ oldTranslator.toSpanish = function(inputObject){
    
-   // spanishTR.map().
-   
-   console.log(inputs);
+ 	console.log(inputObject.textToTranslate,inputObject.languageToUse);
+  	
  
  }
  
