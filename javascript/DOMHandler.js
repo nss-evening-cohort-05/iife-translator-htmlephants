@@ -1,3 +1,5 @@
+var button = document.getElementById('translate');
+
 // Key value pairs when we call the setter
 
 var translatorObjects = {
@@ -5,8 +7,6 @@ var translatorObjects = {
 	textkey: document.getElementById('input'),
     languagekey: document.getElementById('language')
 };
-
-var button = document.getElementById('translate');
 
 //gets language
 function setLanguage(){	
@@ -22,15 +22,15 @@ function setLanguage(){
 	}
 };
 
-//gets text
+gets text
 function setText(){
 	var text = translatorObjects.textkey.value;
 	return text
 };
 
-button.addEventListener("click", function(){
+translate.addEventListener("click", function(){
 
-	Translate.stringToTranslate(setLanguage(),setText());
+	// translate.stringToTranslate(setLanguage());
 
 	switch(setLanguage()){
 
@@ -53,8 +53,6 @@ button.addEventListener("click", function(){
 		default:
 			alert("Choose one of the 4 languages");
 	}
-
-
 });
 
 
