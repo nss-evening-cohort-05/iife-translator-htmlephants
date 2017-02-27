@@ -7,17 +7,15 @@
  
  oldTranslator.toSpanish = function(inputObject){
    
- 	console.log(inputObject.textToTranslate,inputObject.languageToUse);
+ 	// console.log(inputObject.textToTranslate,inputObject.languageToUse);
   	
-  	var spanishPhrase = [];
+  	var string = inputObject.textToTranslate;
+	var spanishArray =[];
+	var englishString = string.split(' ',3);
+	console.log(englishString);
 
-  	
+  	return inputObject.textToTranslate
 
-  	// for(key in inputObject){
-
-  	// 	spanishPhrase.push(key);
-  	// 	console.log(spanishPhrase); 
-  	// }
  
  }
  
