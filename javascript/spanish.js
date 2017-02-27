@@ -1,6 +1,6 @@
  var translate = (function(oldTranslator) {
  
- var spanishTr ={"happy": "contento" , 
+ var spanishLang ={"happy": "contento" ,   
  				"spring": "Primavera", 
  				"day": "dia" 
  				};
@@ -9,6 +9,15 @@
    
  	console.log(inputObject.textToTranslate,inputObject.languageToUse);
   	
+  	var spanishPhrase = [];
+
+  	
+
+  	// for(key in inputObject){
+
+  	// 	spanishPhrase.push(key);
+  	// 	console.log(spanishPhrase); 
+  	// }
  
  }
  
