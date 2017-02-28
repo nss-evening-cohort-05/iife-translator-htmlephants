@@ -1,5 +1,3 @@
-var button = document.getElementById('translate');
-
 // Key value pairs when we call the setter
 
 var translatorObjects = {
@@ -8,6 +6,8 @@ var translatorObjects = {
     languagekey: document.getElementById('language')
 };
 
+var button = document.getElementById('translate');
+var output = document.getElementById('output');
 //gets language
 function setLanguage(){	
 	
@@ -22,37 +22,39 @@ function setLanguage(){
 	}
 };
 
-gets text
+//gets text
 function setText(){
 	var text = translatorObjects.textkey.value;
 	return text
 };
 
-translate.addEventListener("click", function(){
+button.addEventListener("click", function(){
 
-	// translate.stringToTranslate(setLanguage());
+	Translate.stringToTranslate(setLanguage(),setText());
 
 	switch(setLanguage()){
 
 		case "spanish":
 			console.log('Spanish chosen');
-			Translate.toSpanish(Translate.getTranslation()); 
+			output.innerHTML += Translate.toSpanish(Translate.getTranslation()); 
 			break;
 		case "arabic":
 			console.log('Arabic chosen');//run .arabicTranslate;
-			Translate.toArabic(Translate.getTranslation());
+			output.innerHTML += Translate.toArabic(Translate.getTranslation());
 			break;
 		case "french":
 			console.log('French chosen');//run .frenchTranslate;
-			Translate.toFrench(Translate.getTranslation());
+			output.innerHTML += Translate.toFrench(Translate.getTranslation());
 			break;
 		case "swahili":
 			console.log('Swahili chosen');//run .swahiliTranslate;
-			Translate.toSwahili(Translate.getTranslation());
+			output.innerHTML += Translate.toSwahili(Translate.getTranslation());
 			break;	
 		default:
 			alert("Choose one of the 4 languages");
 	}
+
+
 });
 
 

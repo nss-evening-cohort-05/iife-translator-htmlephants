@@ -19,7 +19,7 @@ var inputs = {
 
     getTranslation: function(){
     	
-    	return inputs
+    	return inputs;
 
     }
 

@@ -7,10 +7,16 @@ var frenchTr = {
 };
  
 oldTranslator.toFrench = function(inputObject){
+	
+// var string = inputObject.textToTranslate;
+// var frenchArray =[];
+// var englishString = string.split(' ',3);
+// console.log(englishString);
+
 	return frenchTr[inputObject];
 };
  
- return frenchTr;
+ return oldTranslator;
  
 })(Translate || {});
 
@@ -20,3 +26,13 @@ oldTranslator.toFrench = function(inputObject){
 // happy = content 
 // spring = printemps
 // day = journée
+
+
+
+
+
+
+
+
+
+
