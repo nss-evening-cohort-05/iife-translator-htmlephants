@@ -12,7 +12,7 @@ var inputs = {
     stringToTranslate: function(languageChoice, textInput) {
         
        	inputs.textToTranslate = textInput;
-        inputs.languageToUse = languageChoice;;
+        inputs.languageToUse = languageChoice;
         console.log("translate "+inputs.textToTranslate,"to " +inputs.languageToUse);
         
     },
