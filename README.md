@@ -12,3 +12,15 @@ This project has a goal of four group members to each create a JavaScript file w
 
 ###Secondary Goal 
 To complete the project with minimal merge conflicts. 
+
+###Program Languages Used
+**HTML**
+**CSS**
+**JavaScript**
+
+###Conributors
+[Ellis Thomas](https://github.com/ellisthomas)
+[Meghan Debity](https://github.com/Megraohoh)
+[Geoff Webb](https://github.com/webbdm)
+[Sany Yousif](https://github.com/Sanyyouisf)
+
