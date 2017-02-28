@@ -11,15 +11,22 @@ var inputs = {
   return {
     stringToTranslate: function(languageChoice, textInput) {
         
-       	inputs.textToTranslate = textInput;
+
+        inputs.textToTranslate = textInput.toLowerCase();
+
+       
+
         inputs.languageToUse = languageChoice;
         console.log("translate "+inputs.textToTranslate,"to " +inputs.languageToUse);
         
     },
 
     getTranslation: function(){
+
+     
     	
     	return inputs;
+
 
     }
 
