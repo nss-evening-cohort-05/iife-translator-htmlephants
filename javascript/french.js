@@ -1,4 +1,4 @@
-var translate = (function(oldTranslator) {
+var Translate = (function(oldTranslator) {
  
 var frenchTr = {
 	"happy": "content",
@@ -8,16 +8,26 @@ var frenchTr = {
  
 oldTranslator.toFrench = function(inputObject){
 	
-// var string = inputObject.textToTranslate;
-// var frenchArray =[];
-// var englishString = string.split(' ',3);
-// console.log(englishString);
+  var string = inputObject.textToTranslate;
+	var frenchArray =[];
+	var englishString = string.split(' ');
+	console.log(englishString);
+
+	for(i=0; i<englishString.length; i++){
+
+		var spanWord=frenchLang[englishString[i]];
+		console.log(spanWord);
+
+		// if statement //	
+
+
+		frenchArray.push(spanWord);
 
 	return frenchTr[inputObject];
 };
  
  return oldTranslator;
- 
+} 
 })(Translate || {});
 
 

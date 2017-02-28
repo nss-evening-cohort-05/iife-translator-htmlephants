@@ -1,6 +1,6 @@
  var Translate = (function(oldTranslator) {
  
- var spanishLang ={"happy": "contento" ,   
+ var frenchLang ={"happy": "contento" ,   
  				"spring": "Primavera", 
  				"day": "dia" 
  				};
@@ -10,7 +10,7 @@
  	console.log(inputObject.textToTranslate,inputObject.languageToUse);
   	
   	var string = inputObject.textToTranslate;
-	var spanishArray =[];
+	var frenchArray =[];
 	var englishString = string.split(' ');
 	console.log(englishString);
 
@@ -22,11 +22,11 @@
 		// if statement //	
 
 
-		spanishArray.push(spanWord);
+		frenchArray.push(spanWord);
 
 	}
 
-  	return spanishArray.join(' ');
+  	return frenchArray.join(' ');
 
  
  }
