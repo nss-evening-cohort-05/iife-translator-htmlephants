@@ -1,20 +1,32 @@
 var translate = (function(oldTranslator) {
  
- var arabicTr ={"happy": "saeed" , 
+ var arabicLang ={"happy": "saeed" , 
  				"spring": "rabeea", 
  				"day": "yoom" 
  				};
  
- oldTranslator.toArabic= function(inputString){
-   
-   return arabicTr[inputString];
-   console.log("the arabic translation in prossess");
- 	}
- 
- return;
+ oldTranslator.toArabic= function(inputObject){
+   	var string = inputObject.textToTranslate;
+	var arabicArray =[];
+	var englishString = string.split(' ');
+	console.log(englishString);
+
+	for(i=0; i<englishString.length; i++){
+
+		var arabicWord = arabicLang[englishString[i]];
+		console.log(arabicWord);
+		arabicArray.push(arabicWord);
+	}
+	return arabicArray.join(' ');
+ }
+ return oldTranslator;
  
 })(Translate || {});
 
 
- 
 
+
+		
+
+
+ 

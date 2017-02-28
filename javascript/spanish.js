@@ -1,18 +1,36 @@
-var translate = (function(oldTranslator) {
+var Translate = (function(oldTranslator) {
  
- var spanishTr ={"happy": "contento" , 
+ var spanishLang ={"happy": "contento" ,   
  				"spring": "Primavera", 
  				"day": "dia" 
  				};
  
- oldTranslator.toSpanish = function(){
+ oldTranslator.toSpanish = function(inputObject){
    
-   // spanishTR.map().
-   
-   console.log(inputs);
+ 	console.log(inputObject.textToTranslate,inputObject.languageToUse);
+  	
+  	var string = inputObject.textToTranslate;
+	var spanishArray =[];
+	var englishString = string.split(' ');
+	console.log(englishString);
+
+	for(i=0; i<englishString.length; i++){
+
+		var spanWord=spanishLang[englishString[i]];
+		console.log(spanWord);
+
+		// if statement //	
+
+
+		spanishArray.push(spanWord);
+
+	}
+
+  	return spanishArray.join(' ');
+
  
  }
  
- return;
+ return oldTranslator;
  
 })(Translate || {});

@@ -7,7 +7,7 @@ var translatorObjects = {
 };
 
 var button = document.getElementById('translate');
-
+var output = document.getElementById('output');
 //gets language
 function setLanguage(){	
 	
@@ -36,19 +36,19 @@ button.addEventListener("click", function(){
 
 		case "spanish":
 			console.log('Spanish chosen');
-			Translate.toSpanish(); 
+			output.innerHTML += Translate.toSpanish(Translate.getTranslation()); 
 			break;
 		case "arabic":
 			console.log('Arabic chosen');//run .arabicTranslate;
-			Translate.toArabic();
+			output.innerHTML += Translate.toArabic(Translate.getTranslation());
 			break;
 		case "french":
 			console.log('French chosen');//run .frenchTranslate;
-			Translate.toFrench();
+			output.innerHTML += Translate.toFrench(Translate.getTranslation());
 			break;
 		case "swahili":
 			console.log('Swahili chosen');//run .swahiliTranslate;
-			Translate.toSwahili();
+			output.innerHTML += Translate.toSwahili(Translate.getTranslation());
 			break;	
 		default:
 			alert("Choose one of the 4 languages");
@@ -58,5 +58,5 @@ button.addEventListener("click", function(){
 });
 
 
-// var resultArabic = Translate.spanishTranslate(translatorObjects.textkey);
+// var resultSpanish = translate.spanishTranslate(translatorObjects.textkey);
 // console.log(resultSpanish);
