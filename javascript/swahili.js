@@ -1,6 +1,6 @@
-var translate = (function(oldTranslator) {
+var Translate = (function(oldTranslator) {
 
-var swahiliTr = {
+var swahiliTranslate = {
 	"happy" : "furaha",
 	"spring" : "majira",
 	"day" : "siku"
@@ -8,10 +8,26 @@ var swahiliTr = {
 
 oldTranslator.toSwahili = function(inputObject){
 
+	var string = inputObject.textToTranslate;
+	var swahiliArray = [];
+	var englishString = string.split(' ',3);
+	console.log(englishString);
 
-	return swahiliTr[inputObject];
+	for(var i = 0; i < englishString.length; i++){
+
+		var spanWord = swahiliTranslate[englishString[i]];
+
+
+		console.log(spanWord);
+
+
+		swahiliArray.push(spanWord);
+	}
+
+
+	return swahiliArray.join(' ');
 
 };
  	return oldTranslator;
 
-})(translate || {});
+})(Translate || {});
