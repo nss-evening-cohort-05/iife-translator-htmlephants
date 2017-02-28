@@ -14,7 +14,9 @@ var translate = (function(oldTranslator) {
 	for(i=0; i<englishString.length; i++){
 
 		var arabicWord = arabicLang[englishString[i]];
+			// var arabicWord = toLowerCase(arabicLang[englishString[i]]);
 		console.log(arabicWord);
+
 		arabicArray.push(arabicWord);
 	}
 	return arabicArray.join(' ');
