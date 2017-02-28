@@ -12,8 +12,8 @@ var inputs = {
     stringToTranslate: function(languageChoice, textInput) {
         
        	inputs.textToTranslate = textInput;
-        inputs.languageToUse = languageChoice;;
-        console.log("translate "+ inputs.textToTranslate,"to " + inputs.languageToUse);
+        inputs.languageToUse = languageChoice;
+        console.log("translate "+inputs.textToTranslate,"to " +inputs.languageToUse);
         
     },
 
