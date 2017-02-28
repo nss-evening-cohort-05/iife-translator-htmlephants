@@ -1,4 +1,7 @@
+
 var Translate = (function(oldTranslator) {
+
+ 
  
  var spanishLang ={"happy": "contento" ,   
  				"spring": "Primavera", 
@@ -33,4 +36,5 @@ var Translate = (function(oldTranslator) {
  
  return oldTranslator;
  
+
 })(Translate || {});
