@@ -14,6 +14,8 @@
 	var englishString = string.split(' ',3);
 	console.log(englishString);
 
+	for(i=0; i< )
+
   	return inputObject.textToTranslate
 
  
